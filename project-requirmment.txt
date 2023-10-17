@@ -1,0 +1,22 @@
+1.Install Node and NPM
+2.Create React Project
+3.Install Json fake API server
+https://github.com/typicode/json-server#routes
+4.Test both are working fine
+
+Start Project
+
+Install Routing Package ( npm i react-router-dom) (https://reactrouter.com/en/main/start/tutorial#setup)
+    Make Components
+        RestaurantList
+        RestaurantDetail
+        RestaurantSearch
+        RestaurantCreate 
+        RestaurantUpdate
+
+Make Link  For All Components
+Make Route  For All Components
+
+
+
+
