@@ -21,5 +21,20 @@ Test it With postman
 fetch API Data 
 Show API Data
 
+Install React Bootstrap 
+npm install react-bootstrap bootstrap
+use Table bootstrap
+
+Add Restaurant
+Test API With postman
+Make Input fileds 
+collect data from fileds
+fire post API
 
 
+update Restaurant fileds data
+Test Put API for update Restaurant With postman
+Add Edit Link in list
+pass id as url props
+get Api for fetch then information  and show it in the text Input
+Put api for update Data
