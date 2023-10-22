@@ -45,7 +45,7 @@ function App() {
           <Route path="Create" element={<RestaurantCreate />}></Route>
           <Route path="details" element={<RestaurantDetail />}></Route>
           <Route path="search" element={<RestaurantSearch />}></Route>
-          <Route path="update" element={<RestaurantUpdate />}></Route>
+          <Route path="update/2" element={<RestaurantUpdate />}></Route>
           <Route path="/" exact element={<Home />}></Route>
         </Routes>
       </Router>

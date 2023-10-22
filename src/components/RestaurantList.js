@@ -10,7 +10,7 @@ export default class RestaurantList extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:3000/restaurant").then((response) => {
+    fetch("http://localhost:3000/restaurant/").then((response) => {
       response.json().then((result) => {
         // console.log(result);
         this.setState({ list: result });
@@ -46,7 +46,7 @@ export default class RestaurantList extends Component {
                       <td>{item.email}</td>
                       <td>{item.address}</td>
                       <td>
-                        <Link to={`/update/${item.id}`}>Edit</Link>
+                        <Link to={"/update/" + item.id}>Edit</Link>
                       </td>
                     </tr>
                     // <div key={i}>
