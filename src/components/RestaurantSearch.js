@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+import { Table, Container } from "react-bootstrap";
 
 export default class RestaurantSearch extends Component {
   constructor() {
@@ -32,9 +32,28 @@ export default class RestaurantSearch extends Component {
         <div>
           {this.state.searchData ? (
             <div>
-              {this.state.searchData.map((item, i) => (
-                <div key={i}>{item.name}</div>
-              ))}
+              <Table striped bordered hover className="text-center">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.searchData.map((item, i) => (
+                    <tr key={i}>
+                      <td>{item.id}</td>
+                      <td>{item.name}</td>
+                      <td>{item.rating}</td>
+                      <td>{item.email}</td>
+                      <td>{item.address}</td>                      
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
             </div>
           ) : (
             ""
