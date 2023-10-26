@@ -38,3 +38,11 @@ Add Edit Link in list
 pass id as url props
 get Api for fetch then information  and show it in the text Input
 Put api for update Data
+
+
+Delet Restaurant
+
+
+Test API With postman
+write code for delete api
+Test List
