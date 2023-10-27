@@ -7,6 +7,7 @@ import RestaurantList from "./components/RestaurantList";
 import RestaurantSearch from "./components/RestaurantSearch";
 import RestaurantUpdate from "./components/RestaurantUpdate";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import Login from "./components/login";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
                 <Nav.Link href="#link">
                   <Link to="/update">update</Link>
                 </Nav.Link>
+                <Nav.Link href="#login"><Link to="/Login">Login</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -46,6 +48,7 @@ function App() {
           <Route path="details" element={<RestaurantDetail />}></Route>
           <Route path="search" element={<RestaurantSearch />}></Route>
           <Route path="update/2" element={<RestaurantUpdate />}></Route>
+          <Route path="login" element={<Login/>}></Route>
           <Route path="/" exact element={<Home />}></Route>
         </Routes>
       </Router>
