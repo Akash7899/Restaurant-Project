@@ -1,0 +1,23 @@
+.searchBar {
+    text-align: right;
+}
+
+.search_inputbox {
+    outline: none;
+    display: inline-block;
+    height: 34px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 14px;
+    right: 9px;
+    border-radius: 22px;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 0 14px 2px;
+    border: 1px solid #1e1e1e;
+}
+
+.loginForm{
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Table, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import NavbarMenu from "../layout/navbar";
 
 export default class RestaurantList extends Component {
   constructor() {
@@ -23,6 +24,7 @@ export default class RestaurantList extends Component {
     return (
       <>
         <Container>
+          <NavbarMenu />
           <h1>Restaurant List</h1>
           {this.state.list ? (
             <div>
@@ -46,8 +48,12 @@ export default class RestaurantList extends Component {
                       <td>{item.email}</td>
                       <td>{item.address}</td>
                       <td>
-                        <Link to={"/update/" + item.id} className="p-2">Edit</Link>
-                        <Link to={"/update/" + item.id} className="p-2">Delete</Link>
+                        <Link to={"/update/" + item.id} className="p-2">
+                          Edit
+                        </Link>
+                        <Link to={"/update/" + item.id} className="p-2">
+                          Delete
+                        </Link>
                         {/* <span className="p-2" onClick={this.delete}>Delet</span> */}
                       </td>
                     </tr>

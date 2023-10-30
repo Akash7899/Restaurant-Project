@@ -59,3 +59,11 @@ Make Login from
 Make Mock for api for login with json server
 Hit Api for Login
 Resdirect On list page after login
+
+
+Put Navbar in diffrent file
+add localstore in login
+add logout Button
+make proteched Routed file
+apply Project routes
+test

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Container } from "react-bootstrap";
+import NavbarMenu from "../layout/navbar";
 
 export default class RestaurantUpdate extends Component {
   constructor() {
@@ -27,7 +28,7 @@ export default class RestaurantUpdate extends Component {
     });
   }
   Update() {
-    fetch("http://localhost:3000/restaurant/"+this.state.id, {
+    fetch("http://localhost:3000/restaurant/" + this.state.id, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -45,6 +46,7 @@ export default class RestaurantUpdate extends Component {
     console.warn(this.state);
     return (
       <>
+        <NavbarMenu />
         <Container>
           <h1>RestaurantCreate</h1>
           <input
